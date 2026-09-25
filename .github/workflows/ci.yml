@@ -1,0 +1,44 @@
+name: CI
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    test:
+        name: Test & build
+        runs-on: ubuntu-latest
+        steps:
+            # Action majors are pinned to versions that run on Node 24 (the Node 20
+            # runtime is deprecated on GitHub-hosted runners).
+            - name: Checkout
+              uses: actions/checkout@v7
+
+            # The pnpm version comes from package.json's packageManager field.
+            - name: Install pnpm
+              uses: pnpm/action-setup@v6
+
+            - name: Setup Node
+              uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Lint
+              run: pnpm lint
+
+            - name: Check formatting
+              run: pnpm format:check
+
+            - name: Run tests
+              run: pnpm test
+
+            - name: Build
+              run: pnpm build

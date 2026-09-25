@@ -1,0 +1,11 @@
+# Build output and generated reports
+dist
+coverage
+node_modules
+
+# Lockfile and data fixtures keep their own formatting
+pnpm-lock.yaml
+public/payload.json
+
+# shadcn-vue generated primitives keep their upstream formatting
+src/components/ui
