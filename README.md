@@ -2,9 +2,9 @@
 
 A flow-chart builder built with Vue 3 (JavaScript/ES6): create, edit, connect and
 delete nodes on an interactive canvas, with per-type detail drawers, validation and
-undo/redo. The builder is the app home (`/`).
+undo/redo.
 
-> Demo: _Vercel URL_ · Code: _GitHub URL_
+> Demo: _Vercel URL_
 
 ## Demo video
 
@@ -18,8 +18,8 @@ undo/redo. The builder is the app home (`/`).
 
 ```bash
 pnpm install
-pnpm dev             # http://localhost:5173
-pnpm test            # 20 tests: core store, persistence, validation, and UI flows
+pnpm dev
+pnpm test
 pnpm build
 ```
 
