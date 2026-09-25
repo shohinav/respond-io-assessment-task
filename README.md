@@ -8,11 +8,7 @@ undo/redo.
 
 ## Demo video
 
-[![Flow Chart Builder demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<!-- TODO: replace both VIDEO_ID placeholders with your YouTube video id
-     (the part after "watch?v="). The thumbnail stays clickable on GitHub,
-     which strips embedded players from markdown. -->
+[![Flow Chart Builder demo](https://img.youtube.com/vi/YoXz9-dxYro/maxresdefault.jpg)](https://youtu.be/YoXz9-dxYro)
 
 ## Run
 
